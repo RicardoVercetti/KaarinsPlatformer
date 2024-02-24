@@ -21,13 +21,15 @@ public class MouseInputs implements MouseListener, MouseMotionListener {
 
 	@Override
 	public void mouseMoved(MouseEvent e) {
-		System.out.println("Mouse moved!");
-		gamePanel.setXYDelta(e.getX(), e.getY());
+//		System.out.println("Mouse moved!");
+//		gamePanel.setXYDelta(e.getX(), e.getY());
 	}
 
 	@Override
 	public void mouseClicked(MouseEvent e) {
-		System.out.println("Mouse clicked!");
+//		System.out.println("X :"+ e.getX() + "|| Y :"+e.getY());
+		gamePanel.spawnRect(e.getX(), e.getY());
+		
 		
 	}
 
